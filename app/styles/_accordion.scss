@@ -1,0 +1,54 @@
+.häufige-fragen-section{
+  margin-bottom: 2rem;
+  .häufige-fragen-section-trenner{
+    background-color: $background-clr-darker;
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    padding: 2rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    & > h2{
+      text-align: center;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      inset: 0;
+      transform: skewY(2deg);
+      z-index: -1;
+    }
+  }
+
+/* Style the accordion panel. Note: hidden by default */
+.accordionContent {
+  padding: 0 18px;
+  transition: max-height 0.2s ease-out;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  & > p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  & > ul{
+    list-style: none;
+    display: grid; 
+    gap: 1rem;
+    & > li{
+      &::before {
+        padding-right: 1rem;
+        content: "x";
+        color: $main-clr-one;
+        font-weight: 900;
+      }
+    }
+  }
+}
+}
+.accordionContainer{
+  width: 85%;
+  margin: 0 auto;
+}

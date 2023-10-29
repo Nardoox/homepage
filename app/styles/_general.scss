@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+ul{
+  margin: 0; 
+  padding: 0;
+}
+body {
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ul
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+button{
+  color: $text-clr-dark;
+}
+a{
+  text-decoration: none;
+}
+.platzhalter {
+  height: 75px !important;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 35px;
+}
+p,
+li{
+  font-size: 18px;
+}

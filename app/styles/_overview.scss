@@ -1,0 +1,85 @@
+.platzhalter {
+  margin: 1rem;
+}
+.uebersichtSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.uebersichtSection__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  height: 75vh;
+  background-color: #f0f0f1;
+}
+.uebersichtSection__profileContent {
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.overview {
+  background-color: #f0f0f1;
+  & > div {
+    & > ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  }
+}
+.uebersichtSection__profileContent__List__x{
+  & > li {
+    & > p{ 
+      width: 25rem;
+    }
+    & > h2{
+      width: 14rem;
+      margin-right: 5rem;
+    }
+  }
+}
+.uebersichtSection__profileContent__List{
+  & > li{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem; 
+    & > h2{
+      font-size: 25px;
+    }
+  }
+}
+.uebersichtSection__profileContent__User{
+  margin-bottom: 1rem; 
+}
+.status__img{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem; 
+  gap: 1rem; 
+}
+.stauts__description{
+  text-align: center;
+}
+.uebersichtSection__erweiterungen{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 5rem;
+  gap: 3rem; 
+  width: 50rem;
+}
+.priceTag{
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}

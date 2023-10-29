@@ -1,0 +1,75 @@
+.hero-section {
+  display: flex; 
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  .hero-section-img {
+    margin-top: 10rem;
+    margin-right: 10rem; 
+    & > img{
+        height: 400px;
+    }
+  }
+  .hero-section-content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 9rem;
+    margin-left: 2rem;
+    flex: 1;
+    gap: 1rem;
+    align-items: center;
+    & > h1{
+        font-size: 30px;
+    }
+    & > p {
+        font-size: 22px;
+    }
+    & > a{
+        font-size: 20px;
+    }
+  }
+}
+@media (max-width: 1217px) {
+  .hero-section{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .hero-section-img {
+    margin-right: 0 !important; 
+    margin-top: 0 !important; 
+  }
+}
+
+@media (max-width: 849px) {
+  .hero-section-img{
+    margin-right: 0 !important; 
+    margin-top: 0 !important; 
+    & > img{
+      margin-inline: 0 auto;
+      height: 300px !important;
+    }
+  }
+}
+@media (max-width: 655px) {
+  .hero-section-img{
+    & > img{
+      height: 300px !important;
+    }
+  }
+}
+@media (max-width: 525px) {
+  .hero-section-img{
+    & > img{
+      height: 200px !important;
+    }
+  }
+}
+@media (max-width: 443px) {
+  .gesprächButton{
+    font-size: 13px !important;
+    width: 18rem !important; 
+  }
+}

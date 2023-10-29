@@ -1,0 +1,24 @@
+.underline {
+  cursor: pointer;
+  &::after {
+    content: "";
+    display: block;
+    width: 0%;
+    margin: auto;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    margin-top: -.2rem;
+    background-color: $main-clr-one;
+    transition: width 0.5s ease-out;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+.underlined{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: $main-clr-one;
+}

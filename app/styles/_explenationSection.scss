@@ -1,0 +1,66 @@
+.explenation-section {
+  background-color: $background-clr-darker;
+  margin-bottom: 7rem;
+  border-radius: 10px;
+  position: relative;
+  & > h2{
+    text-align: center;
+    padding: 1rem;
+  }
+  .explenation-section-boxes{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap ;
+    .explenation-section-box{
+      aspect-ratio: 2;
+      width: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 20px;
+      box-shadow: $shadow-light;
+    }
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    inset: 0;
+    transform: skewY(3deg);
+    z-index: -1 ;
+  }
+}
+.svg1{
+  #Rectangle-1{
+    fill:  rgb(240, 240, 241);
+  }
+  #Rectangle-3,
+  #non-Responsive-things,
+  #Rectangle-4{
+    transition: all 1s ease;
+  }
+  #Rectangle-3{
+    transform: translateX(-100%);
+    z-index: 100;
+  }
+}
+.svg1:hover{
+  #Rectangle-3{
+    transform: translateX(31%);
+  }
+  #non-Responsive-things{
+    transform: translateX(100px);
+  }
+  #Rectangle-4{
+    transform: translateY(-5%);
+  }
+}
+
+@media (max-width: 707px) {
+  .explenation-section{
+    margin-top: 4rem; 
+    margin-bottom: 4rem;
+  }
+}

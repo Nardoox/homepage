@@ -1,0 +1,122 @@
+.description-section {
+  z-index: 50;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: $background-clr-darker;
+  .description-section-header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > ul{
+      list-style: none;
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      & > li{
+        &::before {
+          padding-right: 1rem;
+          content: "x";
+          color: $main-clr-one;
+          font-weight: 900;
+        }
+      }
+    }
+    padding-bottom: 2rem;
+  }
+  .description-section-steps{
+    margin-inline: 1rem;
+    .description-section-step{
+      &:nth-child(1){
+        grid-area: one;
+      }
+      &:nth-child(2){
+        grid-area: two;
+      }
+      &:nth-child(3){
+        grid-area: three;
+      }
+    }
+    display: grid;
+    grid-template-areas: 
+    "one two three";
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+
+    .description-section-step{
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: $shadow-light;
+      transition: box-shadow 300ms;
+      & > ul{
+        padding-top: 1rem;
+        list-style: none;
+        & > li{
+          &::before {
+            padding-right: 1rem;
+            content: "x";
+            color: $main-clr-one;
+            font-weight: 900;
+          }
+        }
+      }
+      &:hover{
+        box-shadow: 0px 0px 10px 1px $main-clr-one;
+      }
+      .step{
+        display: flex;
+        padding-bottom: 1rem;
+        & > div{
+          margin-right: .4rem;
+          display: flex;
+          justify-content: center;
+          align-self: center;
+          background-color: $main-clr-one;
+          width: 50px;
+          aspect-ratio: 1;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .description-section-steps{
+    grid-template-areas: 
+    "one two"
+    "three three" !important; 
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 665px) {
+  .description-section-steps{
+  grid-template-areas: 
+    "one"
+    "two"
+    "three" !important; 
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 445px) {
+  .description-section-header{
+    & > h1{
+      font-size: 34px;
+      text-align: center;
+    }
+    & > ul{
+      padding-left: .7rem;
+    }
+  }
+}

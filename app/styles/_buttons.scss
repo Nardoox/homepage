@@ -1,0 +1,110 @@
+.hbtn {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0px 3px 6px;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+  color: $text-clr-dark;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+.hbtn i {
+  padding-right: 8px;
+}
+
+.hb-fill-bottom-rev-br::before {
+  position: absolute;
+  content: "";
+  background: rgb(255, 255, 255);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px auto auto 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.hb-fill-bottom-rev-br:hover::before {
+  width: 100%;
+  height: 0px;
+  opacity: 1;
+}
+
+.hb-fill-bottom-rev-br:hover {
+  background: transparent;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease 0s, background 0s ease 0s;
+}
+
+.hb-border-bottom-br4 {
+  position: relative;
+  transition-duration: 0.3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: 10px 22px;
+}
+
+.hb-border-bottom-br4::after {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 2;
+  margin: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-top-width: 2px;
+  transition: border-top-width 0.1s ease 0.2s, height 0.2s ease 0.1s,
+    width 0.2s ease 0s, margin 0.2s ease 0s, border-bottom-width 0.2s ease 0s;
+}
+
+.hb-border-bottom-br4:hover::after {
+  width: 60%;
+  height: 0px;
+  border-width: 0px 2px 4px;
+  margin: 0px 20%;
+  transition: border-top-width 0.1s ease 0s, height 0.2s ease 0.1s,
+  width 0.2s ease 0.2s, margin 0.2s ease 0.2s,
+border-bottom-width 0.2s ease 0.2s;
+}
+
+.hb-border-left-br2 {
+      width: 95%;
+      max-width: 400px;
+      position: relative;
+      transition-duration: 0.2s;
+      overflow: visible;
+      box-sizing: border-box;
+      border: none;
+      padding: 10px 22px;
+} 
+
+.hb-border-left-br2::after {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      content: "";
+      border: 2px solid $main-clr-one;
+      z-index: 2;
+      transition: all 0.2s linear 0s;
+} 
+
+.hb-border-left-br2:hover::after {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-width: 4px;
+      transition: all 0.2s linear 0s;
+} 

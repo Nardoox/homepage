@@ -1,0 +1,21 @@
+.message-section-trenner {
+  background-color: $background-clr-darker;
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > h2 {
+    text-align: center;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    inset: 0;
+    transform: skewY(-2deg);
+    z-index: -1;
+  }
+}

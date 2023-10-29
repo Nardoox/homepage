@@ -1,0 +1,80 @@
+.why-we-section-boxes {
+  padding-inline: 2rem;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  grid-template-areas:
+    "erfahrung erfahrung auswahl qualität"
+    "kundenservice preise preise qualität";
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  .why-we-section-box {
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.17);
+    background-color: white;
+    transition: background-color .3s, transform .4s;
+    &:nth-child(1) {
+      grid-area: erfahrung;
+    }
+    &:nth-child(2) {
+      grid-area: auswahl;
+    }
+    &:nth-child(3) {
+      grid-area: qualität;
+    }
+    &:nth-chlid(4) {
+      grid-area: kundenservice;
+    }
+    &:nth-child(5) {
+      grid-area: preise;
+    }
+    &:hover{
+      background-color: $main-clr-one-hover;
+      transform: scale(1.1);
+    }
+  }
+}
+@media (max-width: 1340px) {
+  .why-we-section-boxes{
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "erfahrung erfahrung qualität"
+    "kundenservice preise auswahl";
+  }
+}
+@media (max-width: 1055px) {
+  .why-we-section-boxes{
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+    "erfahrung auswahl"
+    "qualität kundenservice"
+    "preise preise";
+  }
+}
+@media (max-width: 789px) {
+  .why-we-section-boxes{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "erfahrung"
+    "auswahl"
+    "qualität"
+    "kundenservice"
+    "preise"
+  }
+}
+@media (max-width: 425px) {
+  .why-we-section-box{
+    & > h2{
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 359px) {
+  .why-we-section-box{
+    & > h2{
+      font-size: 20px;
+    }
+  }
+}
+
+
