@@ -3,8 +3,6 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import { push as Menu } from "react-burger-menu";
-import Hamburger from "hamburger-react";
 
 import email from "@/app/json/email.json";
 import animationSearch from "@/app/json/animation_lngkmgdc.json";
@@ -625,7 +623,6 @@ export default function Home() {
             hover
           ></Player>
         </div>
-        <form action=""></form>
       </section>
 
       <section id="form" className="kontakt-sec increase-size">

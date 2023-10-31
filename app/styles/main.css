@@ -730,10 +730,10 @@ li {
     display: none;
   }
 }
-.underline {
+.underline_custom {
   cursor: pointer;
 }
-.underline::after {
+.underline_custom::after {
   content: "";
   display: block;
   width: 0%;
@@ -745,7 +745,7 @@ li {
   background-color: rgb(54, 205, 205);
   transition: width 0.5s ease-out;
 }
-.underline:hover::after {
+.underline_custom:hover::after {
   width: 100%;
 }
 

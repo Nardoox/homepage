@@ -25,6 +25,10 @@ export default function Uebersicht() {
             <li>
               <a href="/erweiterungen">Erweiterungen</a>
             </li>
+            <Divider className="my-4" />
+            <li>
+              <a href="/api/auth/logout">Ausloggen</a>
+            </li>
           </ul>
         </div>
         <div className="overview__content"></div>

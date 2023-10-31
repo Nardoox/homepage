@@ -9,6 +9,7 @@ export default function Profile() {
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
+  
   return (
     <>
       <div className="platzhalter" />
