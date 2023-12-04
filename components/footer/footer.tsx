@@ -6,12 +6,12 @@ const Footer = () => {
           <h3 className="underlined">Kontakt</h3>
           <div>
             <p>Email:</p>
-            <a>testmensch@gmail.com</a>
+            <a>broussa@web.de</a>
           </div>
-          <div>
+          {/* <div>
             <p>Telefonnummer:</p>
             <a href="tel:+4915773934304">+49 1577 3934304</a>
-          </div>
+          </div> */}
         </div>
         <div className="footer-div-second">
           <h3 className="underlined">Sonstiges</h3>

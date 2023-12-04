@@ -539,7 +539,7 @@ export default function Home() {
             <li>1 Seite &#10132 Homepages/Visitenkarten</li>
           </ul>
           <a
-            href="index.html#form"
+            href="#message-section"
             id="example"
             className="hbtn hb-border-bottom-br4"
           >
@@ -566,7 +566,7 @@ export default function Home() {
             <li>4 Lizensbilder</li>
           </ul>
           <a
-            href="index.html#form"
+            href="#message-section"
             id="example"
             className="hbtn hb-border-bottom-br4"
           >
@@ -587,13 +587,14 @@ export default function Home() {
             <li>Kontaktformular</li>
             <li>
               Ab 7 Seiten &#10132 Homepage +{" "}
-              <span style={{ color: "red" }}>x</span> Unterseiten
+              {/* <span style={{ color: "red" }}>x</span>  */}
+              Unterseiten
             </li>
             <li>8 Lizensbilder</li>
             <li>Logodesign</li>
           </ul>
           <a
-            href="index.html#form"
+            href="#message-section"
             id="example"
             className="hbtn hb-border-bottom-br4"
           >
@@ -642,9 +643,9 @@ export default function Home() {
           <div className="selection">
             <h3>Kontaktform</h3>
             <select className="select" name="Kontaktform">
-              <option>
+              {/* <option>
                 Chatsystem [erfordert die erstellung eines Profils]
-              </option>
+              </option> */}
               <option>WhatsApp</option>
               <option>Telefonat</option>
               <option>Email</option>
